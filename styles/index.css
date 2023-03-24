@@ -1,0 +1,159 @@
+body {
+    margin:0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar {
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+button > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#social-media-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    width: fit-content;
+    color: aliceblue;
+    background-color: #000;
+}
+
+.btn {
+    background-color: #000;
+    border: 1px solid black;
+}
+
+button:hover {
+    color:#000;
+    background-color: aliceblue;
+    border: rgb(155, 119, 119) 1px solid;}
+
+#main-container {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: space-around;
+    row-gap: 60px;
+
+}
+/* size of calculator thumbnail is too small */
+#card-img-size {
+    height: 250px;
+    margin-top: 10px;
+}
+
+#nested-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 50px;
+    max-width:980px;
+}
+
+#intro-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+#intro-text > h1 {
+    width:auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+/* .z-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    color: white;
+     outline effect 
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    opacity: 0.03;
+    top: 10px;
+    font-stretch: ultra-expanded;
+} */
+
+#title > p {
+    margin: 0;
+    padding: 0;
+}
+
+#title > p:hover {
+    transform: skewX(-10deg);
+    font-weight: 500;
+}
+
+#profileImage > img {
+    width: 350px;
+    height:250px;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: transform 1s ease-in;
+}
+
+#profileImage > img:hover {
+    transform: scale(1.5);
+}
+
+h1 {
+    transition: transform 3s ease-in;
+    width: 300px;
+    color: black;
+}
+
+h1:hover {
+    transform: rotate(720deg);
+}
+
+.row {
+    justify-content: space-around;
+}
+
+h1:hover {
+    width:400px
+}
+
+footer {
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-brands {
+    color: black;
+}
+/* @keyframes slideText {
+    from {
+        transform: translateX(0px);
+        /* transform: rotate(0deg); 
+    }
+
+    to {
+        transform: translateX(150px);
+        /* transform: rotate(360deg); 
+    }
+}
+
+.slideText {
+    animation: slideText 3s ease-in-out;
+} */

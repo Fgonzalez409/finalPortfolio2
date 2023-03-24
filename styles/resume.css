@@ -1,0 +1,328 @@
+html {
+    background-color: gray;
+    max-width: 900px;
+    min-width: 375px;
+    margin: auto;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.container-fluid > li {
+    list-style:none;
+}
+
+.container {
+    margin: auto;/* centers the body element on the page*/
+    color:black;
+    display: grid;
+    background-color: white;
+    box-shadow: 5px 5px 20px;
+    margin-top: 80pt;
+    margin-bottom: 10pt;
+    max-width: 900px;
+    min-width: 375px;
+}
+
+header {
+    position: absolute;
+    top:0;
+}
+
+p, li, article {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* remove empty space for all h3 and h4 */
+h3, h4 {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    margin-top: 20pt;
+}
+
+/* removes the indentation on all list items */
+ul {
+    padding-left: 15pt;
+}
+
+i {
+    padding-left: 10pt;
+    padding-top:5pt;
+}
+
+/* header{
+    width:95%;
+    margin:auto; 
+    margin-top: 2%;
+    background:rgb(62, 102, 115);
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+#square-div {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: rgb(62,102,115);
+}
+
+#square{
+    color:white;
+    width:60px;
+    height:60px;
+    border-color: white;
+    border-style: ridge;
+    border-width:2px;
+    background:rgb(62, 102, 115);
+    margin-top: 20pt;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+#FG {
+    /* Centers FG vertically */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Centers the name on the header of the resume */
+#name{
+    color:white;
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+.grid-container {
+    display:grid;
+    margin: auto;
+    grid-template-columns: 2.5fr 1.5fr;
+    width:95%;
+}
+
+.left-grid {
+    display: grid;
+    grid-template-rows:175px 275px 225px 225px;
+    margin-right: 15pt;
+    margin-left: 10pt;
+    row-gap: 10pt;
+}
+
+.right-grid {
+    display:grid;
+    grid-template-rows: 150px 390px 300px 200px;
+    background-color: rgb(228, 230, 235);
+    padding-left: 10pt;
+}
+
+.grid-item1 {
+    padding-top: 20pt;
+}
+
+.grid-item2 {
+    padding-top: 20pt;
+}
+
+.grid-item4 > p {
+    line-height: 0pt;
+}
+
+img {
+    margin-top: 30px;
+    height:150px;
+    width:280px;
+}
+
+/* in grid-item2 */
+
+/* contact information displayed as a column */
+#contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* fixing spacing on the left side of the grid */
+.grid-item1 > article {
+    padding-top: 10pt;
+}
+
+.grid-item3 > p{
+ 
+    line-height: 8pt;
+}
+
+.grid-item5 > p{
+    line-height: 8pt;
+}
+
+.grid-item7 > p {
+    line-height: 8pt;
+}
+
+.grid-item6 {
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+}
+
+.skills-grid-col-1 {
+    display: grid;
+    grid-template-rows:  14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+}
+
+.skills-grid-col-2 {
+    display: grid;
+    margin-right: 40pt;
+    grid-template-rows:  14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+}
+
+#Java-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width: 80%;
+}
+
+#Javascript-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width:70%;
+}
+
+#Bootstrap-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width:80%;
+}
+
+#Git-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width:80%;
+}
+
+#CSS-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width:90%;
+}
+
+#HTML-bar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: black;
+    border: 2px solid red;
+    width:100%;
+}
+
+.skills-grid-col-3 {
+    display: grid;
+    grid-template-rows:  14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;   
+}
+
+#Java-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Javascript-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Bootstrap-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Git-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#CSS-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#HTML-percentage {
+    margin-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 749px) and (min-width: 468px){
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    html {
+        height:2250px;
+    }
+
+    .right-grid {
+        height: 850px;
+        background-color: rgb(228, 230, 235);
+    }
+
+    .container {
+        height:2100px;
+        max-width: 900px;
+        min-width: 375px;
+    }
+}
+
+@media (max-width: 468px) and (min-width:375px){
+    .grid-container {
+        grid-template-columns: 1fr;
+        max-width: 900px;
+        min-width: 375px;
+    }
+
+    .left-grid {
+        grid-template-rows:200px 275px 250px 200px;
+    }
+
+    html {
+        height:2150px;
+    }
+
+    .right-grid {
+        height:850px;
+        background-color:rgb(228, 230, 235);
+    }
+
+    .container {
+        height: 2150px;
+        max-width: 900px;
+        min-width: 375px;
+    }
+
+    html {
+        max-width: 900px;
+        min-width: 375px;
+    }
+}
