@@ -37,7 +37,8 @@ button {
 button:hover {
     color:#000;
     background-color: aliceblue;
-    border: rgb(155, 119, 119) 1px solid;}
+    border: rgb(155, 119, 119) 1px solid;
+}
 
 #main-container {
     margin-top: 50px;

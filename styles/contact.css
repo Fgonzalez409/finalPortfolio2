@@ -25,3 +25,17 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.mb-3 {
+    width:400px;
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+
+#btn:hover {
+    border-radius: 4px;
+    color:white;
+    background: black;
+    border: rgb(155, 119, 119) 1px solid;
+}
