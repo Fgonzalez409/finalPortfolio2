@@ -69,7 +69,8 @@ i {
 
 #square-div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 95%;
     margin: auto;
     margin-top: 2%;
