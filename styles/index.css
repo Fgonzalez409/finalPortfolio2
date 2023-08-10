@@ -3,6 +3,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: rgb(221, 220, 220);
 }
 
 .navbar {
