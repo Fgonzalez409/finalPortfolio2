@@ -76,17 +76,6 @@ button:hover {
     margin-top: 30px;
 }
 
-/* .z-1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150px;
-    color: white;
-     outline effect 
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    opacity: 0.03;
-    top: 10px;
-    font-stretch: ultra-expanded;
-} */
-
 #title > p {
     margin: 0;
     padding: 0;
@@ -113,6 +102,11 @@ h1 {
     transition: transform 3s ease-in;
     width: 300px;
     color: black;
+}
+
+.featuredProjects {
+    display: flex;
+    justify-content: center;
 }
 
 h1:hover {
