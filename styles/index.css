@@ -1,13 +1,16 @@
 body {
-    margin:0;
+    margin:auto;
     padding: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: rgb(221, 220, 220);
+    background-color: white;
 }
 
+
+
 .navbar {
-    border-radius: 5px;
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 10px;
 }
 
 .navbar-nav {
@@ -47,7 +50,7 @@ button:hover {
     display: grid;
     justify-content: space-around;
     row-gap: 60px;
-
+    border: 1px solid rgb(202, 197, 197);
 }
 /* size of calculator thumbnail is too small */
 #card-img-size {
@@ -107,6 +110,7 @@ h1 {
 .featuredProjects {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 h1:hover {
@@ -115,41 +119,22 @@ h1:hover {
 
 .row {
     justify-content: space-around;
+    margin-top: 25px;
+}
+
+.row2-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 h1:hover {
-    width:400px
+    width:400px;
 }
 
-footer {
-    height: 50px;
-    margin-top: 10px;
-    display: flex;
-    background-color: aliceblue;
-    justify-content: center;
-}
 
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .fa-brands {
     color: black;
 }
-/* @keyframes slideText {
-    from {
-        transform: translateX(0px);
-        /* transform: rotate(0deg); 
-    }
-
-    to {
-        transform: translateX(150px);
-        /* transform: rotate(360deg); 
-    }
-}
-
-.slideText {
-    animation: slideText 3s ease-in-out;
-} */

@@ -19,7 +19,7 @@ html {
     display: grid;
     background-color: white;
     box-shadow: 5px 5px 20px;
-    margin-top: 80pt;
+    
     margin-bottom: 10pt;
     max-width: 900px;
     min-width: 375px;
@@ -55,13 +55,6 @@ i {
     padding-left: 10pt;
     padding-top:5pt;
 }
-
-/* header{
-    width:95%;
-    margin:auto; 
-    margin-top: 2%;
-    background:rgb(62, 102, 115);
-} */
 
 * {
     box-sizing: border-box;
