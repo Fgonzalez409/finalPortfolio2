@@ -8,11 +8,4 @@ const handleClick = () => {
     else{
         mainBody.style.display = "none"
     }
-
-    
-
-    // btn.addEventListener("click" , function(){
-    //     document.body.classList.toggle("no-main-body")
-    // });
-    
 }
