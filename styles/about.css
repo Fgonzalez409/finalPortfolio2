@@ -52,7 +52,6 @@ article {
 
 #top-left {
     grid-area: top-left;
-    /* background-color: aliceblue; */
     text-align: center;
 }
 
@@ -62,14 +61,17 @@ h3 {
 
 #top-right {
     grid-area: top-right;
-    /* background-color: rgb(183, 202, 202); */
     text-align: center;
     
 }
 
-#target-image {
-    width:220px;
-    height: 220px;
+#bottom-left > ul {
+    display: block;
+    list-style: disc;
+}
+
+#bottom-left > li {
+    list-style: decimal;
 }
 
 #bottom-left {
@@ -79,7 +81,7 @@ h3 {
 }
 
 li {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
     justify-content: center;
 }
@@ -118,7 +120,7 @@ ul {
 }
 
 #lower-bottom-right {
-    background-color: blue;
+    background-color: white;
     flex: 1;
     text-align: center;
 }
@@ -134,6 +136,7 @@ ul {
     "top-left top-left top-left top-left top-right top-right"
     "bottom-left bottom-left bottom-right bottom-right bottom-right bottom-right"
     "bottom-left bottom-left bottom-right bottom-right bottom-right bottom-right";
+    opacity: 0.7
 }
 
 #overview {
