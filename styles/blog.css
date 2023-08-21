@@ -57,3 +57,7 @@ li {
     grid-template-columns: repeat(3,310px);
     margin-bottom: 40px;
 }
+
+.d-block {
+    height:250px;
+}
