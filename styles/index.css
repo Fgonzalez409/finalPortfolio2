@@ -3,7 +3,8 @@ body {
     padding: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: white;
+    background-image: linear-gradient(to right, black , gray,black);
+    margin-bottom: 100px;
 }
 
 
@@ -117,16 +118,13 @@ h1:hover {
     transform: rotate(360deg);
 }
 
+.col {
+    padding-bottom: 20px;
+}
+
 .row {
     justify-content: space-around;
     margin-top: 25px;
-}
-
-.row2-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
 }
 
 h1:hover {
@@ -137,4 +135,10 @@ h1:hover {
 
 .fa-brands {
     color: black;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    height:30px;
 }
