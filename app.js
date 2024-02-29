@@ -1,11 +1,12 @@
-const handleClick = () => {
-    let mainBody = document.getElementById("main-body");
+import React from 'react';
+import WelcomeAnimation from './WelcomeAnimation';
 
-    if(mainBody.style.display === "none") {
-        mainBody.style.display ="block"
-    }
+const App = () => {
+  return (
+    <div>
+      <WelcomeAnimation />
+    </div>
+  );
+};
 
-    else{
-        mainBody.style.display = "none"
-    }
-}
+export default App;
