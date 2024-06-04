@@ -8,7 +8,6 @@ body {
 }
 
 
-
 .navbar {
     border: 1px solid rgb(202, 197, 197);
     border-radius: 10px;
@@ -142,3 +141,22 @@ h1:hover {
     justify-content: center;
     height:30px;
 }
+
+/* Styles to hide and show the main content */
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
