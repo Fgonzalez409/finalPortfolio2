@@ -112,9 +112,9 @@ button:hover {
     margin-bottom: 25px;
 }
 
-h1:hover {
+/* h1:hover {
     transform: rotate(360deg);
-}
+} */
 
 .col {
     padding-bottom: 20px;
