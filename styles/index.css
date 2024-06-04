@@ -7,7 +7,6 @@ body {
     margin-bottom: 100px;
 }
 
-
 .navbar {
     border: 1px solid rgb(202, 197, 197);
     border-radius: 10px;
@@ -141,6 +140,43 @@ h1:hover {
     justify-content: center;
     height:30px;
 }
+
+.pulsating-button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow {
+    display: inline-block;
+    animation: pulsate 1s infinite;
+    font-size: 20px;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 /* Styles to hide and show the main content */
 .hidden {
