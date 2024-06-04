@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Append the animation container to the root element
   rootElement.appendChild(animationContainer);
 
+  const learnMoreButton = document.getElementById("learn-more-button");
+  const additionalContent = document.getElementById("additional-content");
+
+  learnMoreButton.addEventListener("click", function() {
+    if (additionalContent.classList.contains("content-hidden")) {
+        additionalContent.classList.remove("content-hidden");
+        additionalContent.classList.add("content-visible");
+    } else {
+        additionalContent.classList.remove("content-visible");
+        additionalContent.classList.add("content-hidden");
+    }
+
   // After a delay, add the 'show' class to the welcome text to reveal it
   setTimeout(() => {
     welcomeText.classList.add('show');
