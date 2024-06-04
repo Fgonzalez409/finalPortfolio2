@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import './styles/WelcomeAnimation';
+// Select the root element where the animation will be rendered
+const rootElement = document.getElementById('root');
 
-const WelcomeAnimation = () => {
-  const [showWelcome, setShowWelcome] = useState(false);
+// Create a container for the animation
+const animationContainer = document.createElement('div');
+animationContainer.classList.add('animation-container');
 
-  useEffect(() => {
-    // Use a timeout to delay showing the welcome message after component mounts
-    const timeoutId = setTimeout(() => {
-      setShowWelcome(true);
-    }, 500);
+// Create the welcome text element
+const welcomeText = document.createElement('h1');
+welcomeText.textContent = 'Welcome to my page';
+welcomeText.classList.add('welcome-text');
 
-    // Clear the timeout on component unmount to avoid memory leaks
-    return () => clearTimeout(timeoutId);
-  }, []);
+// Append the welcome text to the animation container
+animationContainer.appendChild(welcomeText);
 
-  return (
-    <div className="animation-container">
-      <h1 className={showWelcome ? 'welcome-text show' : 'welcome-text'}>Welcome to my page</h1>
-    </div>
-  );
-};
+// Append the animation container to the root element
+rootElement.appendChild(animationContainer);
 
-export default WelcomeAnimation;
+// After a delay, add the 'show' class to the welcome text to reveal it
+setTimeout(() => {
+  welcomeText.classList.add('show');
+}, 500); 
