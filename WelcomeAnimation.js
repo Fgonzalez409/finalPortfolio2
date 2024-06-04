@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create the welcome text element
   const welcomeText = document.createElement('h1');
-  welcomeText.textContent = 'Welcome to my page';
+  welcomeText.textContent = 'Hello and thank you for giving my page a visit!';
   welcomeText.classList.add('welcome-text');
 
   // Append the welcome text to the animation container
