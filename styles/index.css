@@ -169,6 +169,30 @@ h1:hover {
     height: auto;
 }
 
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+    z-index: 9999; /* ensures it is above other content */
+}
+
+.welcome-text {
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.welcome-text.show {
+    opacity: 1;
+}
+
 /* Styles to hide and show the main content */
 .hidden {
     display: none;
