@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded and parsed");
+
   const rootElement = document.getElementById('root');
   const mainContent = document.getElementById('main-content');
   const animationContainer = document.createElement('div');
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const additionalContent = document.getElementById("additional-content");
 
   learnMoreButton.addEventListener("click", function() {
+      console.log("Learn more button clicked");
       if (additionalContent.classList.contains("content-hidden")) {
           additionalContent.classList.remove("content-hidden");
           additionalContent.classList.add("content-visible");
@@ -26,13 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // After a delay, add the 'show' class to the welcome text to reveal it
   setTimeout(() => {
+      console.log("Adding show class to welcome text");
       welcomeText.classList.add('show');
   }, 500);
 
   // After a longer delay, hide the animation and show the main content
   setTimeout(() => {
+      console.log("Hiding animation container and showing main content");
       animationContainer.style.display = 'none';
-      mainContent.classList.remove('hidden');
-      mainContent.classList.add('visible');
+      mainContent.classList.remove('content-hidden');
+      mainContent.classList.add('content-visible');
   }, 2500); // Adjust this delay to match the duration of your animation
 });
