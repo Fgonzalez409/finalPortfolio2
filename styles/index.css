@@ -127,6 +127,7 @@ h1:hover {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
@@ -134,15 +135,39 @@ h1:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.pulsating-button:hover {
+    background-color: #0056b3;
 }
 
 .arrow {
     display: inline-block;
     animation: pulsate 1s infinite;
-    font-size: 25px;
+    font-size: 24px; /* Increased font size for more attention */
+    color: yellow; /* Changed color to be more noticeable */
 }
 
 @keyframes pulsate {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+        color: yellow;
+    }
+    50% {
+        transform: scale(1.5) rotate(10deg);
+        opacity: 0.8;
+        color: orange;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+        color: yellow;
+    }
+}
+
+/* @keyframes pulsate {
     0% {
         transform: scale(1);
         opacity: 1;
@@ -155,7 +180,7 @@ h1:hover {
         transform: scale(1);
         opacity: 1;
     }
-}
+} */
 
 .content-hidden {
     opacity: 0;
