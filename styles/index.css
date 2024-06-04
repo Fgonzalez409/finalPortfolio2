@@ -157,6 +157,17 @@ h1:hover {
     }
 }
 
+.content-hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;
+}
+
+.content-visible {
+    opacity: 1;
+    height: auto;
+}
 
 /* Styles to hide and show the main content */
 .hidden {
