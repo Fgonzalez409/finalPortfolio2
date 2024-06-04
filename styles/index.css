@@ -78,15 +78,6 @@ button:hover {
     margin-top: 30px;
 }
 
-#title > p {
-    margin: 0;
-    padding: 0;
-}
-
-#title > p:hover {
-    transform: skewX(-10deg);
-    font-weight: 500;
-}
 
 #profileImage > img {
     width: 350px;
@@ -100,21 +91,11 @@ button:hover {
     transform: scale(1.5);
 }
 
-/* h1 {
-    transition: transform 3s ease-in;
-    width: 300px;
-    color: black;
-} */
-
 .featuredProjects {
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
 }
-
-/* h1:hover {
-    transform: rotate(360deg);
-} */
 
 .col {
     padding-bottom: 20px;
