@@ -158,7 +158,7 @@ h1:hover {
 .arrow {
     display: inline-block;
     animation: pulsate 1s infinite;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 @keyframes pulsate {
