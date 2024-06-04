@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
     margin:auto;
     padding: 0;
@@ -38,95 +39,67 @@ button {
 }
 
 button:hover {
-    color:#000;
-    background-color: aliceblue;
-    border: rgb(155, 119, 119) 1px solid;
+    background-color: #000;
 }
 
-#main-container {
-    margin-top: 50px;
-    border-radius: 10px;
-    display: grid;
-    justify-content: space-around;
-    row-gap: 60px;
-    border: 1px solid rgb(202, 197, 197);
-}
-/* size of calculator thumbnail is too small */
-#card-img-size {
-    height: 250px;
-    margin-top: 10px;
+.container-md {
+    color: aliceblue;
 }
 
 #nested-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
-    max-width:980px;
-}
-
-#intro-text {
     display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-
+    align-items: center;
 }
 
-#intro-text > h1 {
-    width:auto;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 30px;
+#profileImage img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-
-#profileImage > img {
-    width: 350px;
-    height:250px;
-    border-radius: 10px;
-    margin-top: 15px;
-    transition: transform 1s ease-in;
+h1 {
+    color: aliceblue;
 }
 
-#profileImage > img:hover {
-    transform: scale(1.5);
+#name-styling {
+    text-shadow: 2px 2px 5px #000;
 }
 
-.featuredProjects {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
+hr {
+    border-top: 1px solid #000;
+    margin: 10px 0;
 }
 
-.col {
-    padding-bottom: 20px;
+button#learn-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.row {
-    justify-content: space-around;
-    margin-top: 25px;
+button#learn-more-button:hover {
+    background-color: #0056b3;
 }
 
-h1:hover {
-    width:400px;
+button#learn-more-button i {
+    margin-right: 5px;
 }
 
-
-
-.fa-brands {
-    color: black;
+button#learn-more-button:focus {
+    outline: none;
 }
 
-#footer-container {
-    display: flex;
-    justify-content: center;
-    height:30px;
+.content-hidden {
+    display: none;
 }
 
-.arrow {
-    display: inline-block;
-    animation: pulsate 1s infinite;
-    font-size: 20px;
-    font-size: 30px;
+/* Pulsating effect for the icon */
+.pulsating-icon {
+    animation: pulsate 1.5s infinite;
 }
 
 @keyframes pulsate {
@@ -135,66 +108,11 @@ h1:hover {
         opacity: 1;
     }
     50% {
-        transform: scale(1.2);
-        opacity: 0.8;
+        transform: scale(1.1);
+        opacity: 0.7;
     }
     100% {
         transform: scale(1);
         opacity: 1;
     }
 }
-
-.content-hidden {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 1s ease-in-out, height 1s ease-in-out;
-}
-
-.content-visible {
-    opacity: 1;
-    height: auto;
-}
-
-.animation-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
-    z-index: 9999; /* ensures it is above other content */
-}
-
-.welcome-text {
-    font-size: 2rem;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.welcome-text.show {
-    opacity: 1;
-}
-
-/* Styles to hide and show the main content */
-.hidden {
-    display: none;
-  }
-  
-  .visible {
-    display: block;
-    animation: fadeIn 2s ease-in;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
