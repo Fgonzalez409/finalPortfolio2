@@ -55,7 +55,7 @@ button:hover {
 }
 /* size of calculator thumbnail is too small */
 #card-img-size {
-    height: 250px;
+    height: 200px;
     margin-top: 10px;
 }
 
