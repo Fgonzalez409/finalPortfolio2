@@ -50,6 +50,8 @@ button:hover {
     justify-content: space-around;
     row-gap: 60px;
     border: 1px solid rgb(202, 197, 197);
+    width: 100%;
+    height: auto;
 }
 /* size of calculator thumbnail is too small */
 #card-img-size {
