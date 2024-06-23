@@ -1,5 +1,4 @@
 .navbar {
-    margin-top: 10px;
     border: 1px solid rgb(202, 197, 197);
     border-radius: 10px;
 }
@@ -13,6 +12,9 @@ html {
 
 
 
+.navbar-nav {
+    display: flex;
+}
 .nav-item {
     list-style: none;
 }
@@ -21,8 +23,18 @@ html {
     list-style:none;
 }
 
-.container {
-    margin: auto;/* centers the body element on the page*/
+#main-container {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: space-around;
+    row-gap: 60px;
+    border: 1px solid rgb(202, 197, 197);
+    width: 100%;
+    height: auto;
+}
+/* .container {
+    margin: auto;/* centers the body element on the page
     color:black;
     display: grid;
     background-color: white;
@@ -31,7 +43,8 @@ html {
     margin-bottom: 10pt;
     max-width: 900px;
     min-width: 375px;
-}
+} 
+*/
 
 header {
     position: absolute;
