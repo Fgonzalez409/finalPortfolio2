@@ -1,3 +1,17 @@
+body {
+    margin:auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(to right, black , gray,black);
+    margin-bottom: 100px;
+}
+
+.navbar {
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 10px;
+}
+
 html {
     background-color: white;
     max-width: 900px;
@@ -5,11 +19,7 @@ html {
     margin: auto;
 }
 
-.navbar {
-    margin-top: 10px;
-    border: 1px solid rgb(202, 197, 197);
-    border-radius: 10px;
-}
+
 
 .nav-item {
     list-style: none;
