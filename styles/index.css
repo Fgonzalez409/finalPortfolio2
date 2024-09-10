@@ -134,6 +134,23 @@ h1:hover {
     font-size: 20px;
 }
 
+/* styles/index.css */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    color: #000; /* You can choose your color */
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
 @keyframes pulsate {
     0% {
         transform: scale(1);
