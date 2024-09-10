@@ -1,12 +1,14 @@
 function toggleFeaturedProjects() {
-    const projectsSection = document.getElementById('featured-projects-section');
     const button = document.getElementById('featured-projects-button');
-    
-    if (projectsSection.classList.contains('content-hidden')) {
-        projectsSection.classList.remove('content-hidden');
-        button.textContent = 'Hide Projects';
+    const featuredProjects = document.getElementById('main-container');
+
+    // Toggle visibility of featured projects
+    if (featuredProjects.classList.contains('content-hidden')) {
+        featuredProjects.classList.remove('content-hidden');
     } else {
-        projectsSection.classList.add('content-hidden');
-        button.textContent = 'Show Projects';
+        featuredProjects.classList.add('content-hidden');
     }
+
+    // Remove pulsating animation after button is clicked
+    button.classList.add('clicked');
 }
