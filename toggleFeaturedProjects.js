@@ -4,9 +4,9 @@ function toggleFeaturedProjects() {
     
     if (projectsSection.classList.contains('content-hidden')) {
         projectsSection.classList.remove('content-hidden');
-        button.textContent = 'Hide Featured Projects';
+        button.textContent = 'Hide Projects';
     } else {
         projectsSection.classList.add('content-hidden');
-        button.textContent = 'Show Featured Projects';
+        button.textContent = 'Show Projects';
     }
 }
