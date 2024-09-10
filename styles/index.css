@@ -119,11 +119,15 @@ h1:hover {
 }
 
 #footer-container {
-    display: flex;
-    justify-content: center;
-    height:30px;
+    text-align: center;
+    padding: 20px;
 }
 
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 .pulsating-icon {
     animation: pulsate 1.5s infinite;
 }
@@ -150,6 +154,8 @@ h1:hover {
 .social-link:hover {
     color: #007bff; /* Change color on hover */
 }
+
+
 
 @keyframes pulsate {
     0% {
